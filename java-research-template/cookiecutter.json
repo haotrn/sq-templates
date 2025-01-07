@@ -1,0 +1,7 @@
+{
+    "project_name": "Java Research Project",
+    "__project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+    "package_name": "com.mycompany.app",
+    "__package_name_directory": "{{ cookiecutter.package_name.replace('.', '/') }}",
+    "author": "Name Lastname"
+}
