@@ -3,5 +3,8 @@
     "__project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
     "package_name": "com.mycompany.app",
     "__package_name_directory": "{{ cookiecutter.package_name.replace('.', '/') }}",
-    "author": "Name Lastname"
+    "description": "A Simple Java Project",
+    "author": "Name Lastname",
+    "build_tool": ["Gradle", "Maven", "None"],
+    "init_git_repository": ["Yes", "No"]
 }
