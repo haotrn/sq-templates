@@ -8,5 +8,15 @@
     "license": ["MIT", "BSD-3", "GNU GPL v3.0", "Apache Software License 2.0", "None"],
     "build_tool": ["Gradle", "Maven", "None"],
     "init_git_repository": true,
-    "git_hosting_service": ["GitHub", "None"]
+    "git_hosting_service": ["None", "GitHub"],
+    "__prompts__": {
+        "project_name": "Select your project name",
+        "package_name": "Select your package name",
+        "description": "Description of your project",
+        "author": "Author full name",
+        "license": "Select your license",
+        "build_tool": "Select your build tool",
+        "init_git_repository": "Do you want to initialize a git repository for your project?",
+        "git_hosting_service": "(Only relevant if previous answer was yes) Where do you want your git repository to be hosted? (CLI tool for the service needs to be installed)"
+    }
 }
