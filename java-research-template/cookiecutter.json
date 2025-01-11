@@ -7,5 +7,6 @@
     "author": "Name Lastname",
     "license": ["MIT", "BSD-3", "GNU GPL v3.0", "Apache Software License 2.0", "None"],
     "build_tool": ["Gradle", "Maven", "None"],
-    "init_git_repository": true
+    "init_git_repository": true,
+    "git_hosting_service": ["GitHub", "None"]
 }
