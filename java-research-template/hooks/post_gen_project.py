@@ -28,5 +28,15 @@ def check_build_tool_installed():
         print(f"Warning: {build_tool} not installed.")
 
 
+def init_git_repository():
+    # working with strings in order to maintain valid python syntax
+    if "{{ cookiecutter.init_git_repository }}" == "True":
+        subprocess.run(["git", "init"], capture_output=True, check=True)
+        subprocess.run(["git", "add", "."], capture_output=True, check=True)
+        subprocess.run(["git", "commit", "-m", "Initial commit"],
+                       capture_output=True, check=True)
+
+
 check_build_tool_installed()
 remove_unnecessary_files()
+init_git_repository()
