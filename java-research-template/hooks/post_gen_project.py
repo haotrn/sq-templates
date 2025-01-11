@@ -4,6 +4,7 @@ import subprocess
 REMOVE_PATHS = [
     '{% if cookiecutter.build_tool != "Gradle" %}build.gradle{% endif %}',
     '{% if cookiecutter.build_tool != "Maven" %}pom.xml{% endif %}',
+    '{% if cookiecutter.license == "None" %}LICENSE{% endif %}',
 ]
 
 
